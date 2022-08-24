@@ -1,0 +1,29 @@
+void generar_coords_obstaculos(objeto_t obstaculos[MAX_OBSTACULOS], int* tope, char tipo, int cantidad,
+                                char mapa[FIL_MAX_MAT][COL_MAX_MAT], int fils, int cols){
+    
+    for(int i = 0; i < cantidad; i++){
+        coordenada_t coord = {0, 0};
+        do {
+            coord = coordenada_aleatoria(ORIGEN_FIL, fils, ORIGEN_COL, cols); 
+        } while (!es_espacio_tipo(LIBRE, coord, mapa) && (es_adyacente_a(PARED, coord, mapa) || tipo != FUEGO));
+       
+        obstaculos[*tope].posicion = coord;
+        obstaculos[*tope].tipo = tipo;
+        *tope += 1;
+    }
+}
+
+void generar_coords_herramientas(objeto_t herramientas[MAX_HERRAMIENTAS], int* tope, char tipo, int cantidad,
+                                char mapa[FIL_MAX_MAT][COL_MAX_MAT], int fils, int cols){
+    
+    for(int i = 0; i < cantidad; i++){
+        coordenada_t coord = {0, 0};
+        do {
+            coord = coordenada_aleatoria(ORIGEN_FIL, fils, ORIGEN_COL, cols); 
+        } while (!es_espacio_tipo(LIBRE, coord, mapa));
+       
+        herramientas[*tope].posicion = coord;
+        herramientas[*tope].tipo = tipo;
+        *tope += 1;
+    }
+}

@@ -1,0 +1,57 @@
+|||Clase 29-3-2022|||
+
+ TIPOS DE DATOS
+
+Un tipo de dato es el conjunto de todos los valores que puede tomar una variable.
+Algunos tipos: int(entero entre -2^31 y 2^31-1), float(reales), char(caracteres), boolverdadero o falso)
+C e un lenguaje de strong typing, debes declarar siempre el tipo de variable
+
+ OPERADORES
+
+ Son simbolos que relacionan dos valores para producir un tercero
+
+Operadores de asignacion: declaran el valor de una variable
+= igual: asigna el valor de una variable, ej:
+
+int numero = 3;
+char letra = 'M';
+
+Operadores aritmeticos: reciben dos valores numericos y devuelven otro valor numerico
+ + suma
+ - resta
+ * multiplicacion
+ / division (parte entera)
+ % modulo
+
+Operadores relacionales: comparan dos datos y devuelven un booleano
+ > mayor, >= mayor o igual
+ < menor, <= menor o igual
+ == igual, != distinto
+
+Operadores logicos: toman dos valores logicos y devuelven otro valor logico
+ && and
+ || or
+ ! not
+
+
+ ESTRUCTURAS DE CONTROL
+
+ Son estructuras que nos permiten tomar en cuenta ciertas condiciones a la hora de progamar
+
+Estructuras condicionales:
+Ejecutan codigo si se cumple una condicion, permiten tener control al momento de la ejecucion
+if, if-else
+
+||| ESTRUCTURA DEL FOR |||
+
+ for(1; 2; 3)
+   1 = codigo que se ejecuta la primera vez que corre el loop
+     Generalmente aqui se inicializa el indice que se va a usar (i)
+
+   2 = condicion para salir del loop
+
+   3 = codigo que se ejecuta cada vez que se repite el loop
+     Generalmente se utiliza para iterar (i++)
+
+ Ejemplo en ./Practicas/Clase 1/Ejercicio2.c
+

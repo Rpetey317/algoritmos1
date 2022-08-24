@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "papeleo.h": "c",
+        "stdio.h": "c"
+    }
+}
